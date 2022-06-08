@@ -1,0 +1,49 @@
+header
+{
+  background-color: lightgray;
+}
+.bkg_b
+{
+  background-color:black;
+}
+.bkg_w
+{
+  background-color: white;
+}
+.f_b
+{
+  color:black;
+}
+.f_w
+{
+  color: white;
+}
+.bold
+{
+  font-weight: bold;
+}
+.html
+{
+  background-color:black;
+  color:orange;
+}
+.html_example
+{
+  background-color:orange;
+  color: black;
+}
+.css
+{
+  background-color: black;
+  color: aqua;
+}
+.js
+{
+  background-color: black;
+  color: yellow;
+}
+.js_example
+{
+  background-color: yellow;
+  color: black;
+}
