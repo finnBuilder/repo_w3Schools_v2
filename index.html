@@ -480,6 +480,69 @@ This will appear as:
     document.getElementById("inner_demo").innerHTML = 5 + 6;
   </script>
 </div>
+<h3>FYI</h3>
+<p>Changing the innerHTML property of an HTML element is a common way to display data in HTML.</p>
+
+<h2>Using document.write()</h2>
+<p>
+  For testing purposes, it is convenient to use document.write():
+</p>
+<h3>Example:</h3>
+  <pre>
+    &lt!DOCTYPE html&gt
+    &lthtml&gt
+    &ltbody&gt
+
+    &lth2&gtMy First Web Page&lt/h2&gt
+    
+    &ltp&gtMy first paragraph&lt/p&gt
+
+    &ltp&gtNever call document.write after the document has finished loading.  It will overwrite the whole document.&lt/p&gt 
+
+    &ltscript&gt
+    document.write(5 + 6);
+    &lt/script&gt
+
+    &lt/body&gt
+    &lt/html&gt 
+  </pre>
+<h3>It Will Appear:</h3>
+<div class="js_example">
+  <h2>My First Web Page</h2>
+  <p>My first paragraph.</p>
+
+  <p>
+    Never call document.write after the document has finished loading.  It will overwrite the whole document.</p>
+
+  <script>
+    document.write(5 + 6);
+  </script>
+  </p>
+</div>
+<h2 class="war">FYI</h2>
+<p class="war">Using document.write() after an HTML document is loaded, will delete all existing HTML</p>
+<h3>This example will show why document.write() method should only be used for testing:</h3>
+<div class="js_example">
+  <h2>My First Web Page</h2>
+  <p>My first paragraph.</p>
+
+  <button type="button" onclick="write(5 + 6)">Click to erase all HTML</button>
+</div>
+<h2>Using window.alert()</h2>
+<p>You can use an alert box to display data:</p>
+
+<h3>Will Appear as:</h3>
+<div class="js_example">
+  <h2>Web Page Title</h2>
+  <p>First paragraph.</p>
+
+<script>
+  window.alert(5 + 6);
+</script>
+
+</div>
+
+
 <!--End of section-->
 <a href="#top" class="js">Back to top</a> |
 <a href="#top_ch04" class="js">Back to Index </a>
