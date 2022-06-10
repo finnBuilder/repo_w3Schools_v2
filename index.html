@@ -62,7 +62,8 @@
   <li>Using innerHTML</li>
   <li>Using document.write()</li>
   <li>Using window.alert</li>
-  <li>Using console.log</li>
+  <li>Using console.log()</li>
+  <li>JavaScript Print()</li>
 </ul>
 
 </ul>
@@ -439,6 +440,47 @@ Thetype attribute is not required.  JavaScript is the default scripting language
 <div class="js">
   <h2 id="ch05">Ch. 5 JavaScript Output</h2>
 </div>  
+<h2>JavaScript Display Possibilities</h2>
+<p>JavaScript can "display" data in different ways:</p>
+<ul>
+  <li>Writing into an HTML element, using innerHTML.</li>
+  <li>Writing into the HTML output using document.write().</li>
+  <li>Writing into an alert box, using window.alert().</li>
+  <li>Writing into the browser console, using console.lof().</li>
+</ul>
+<h3>Using innerHTML</h3>
+<p>
+  To access an HTML element, JavaScript can use the document.getElementById(id) method.  The id attribute defines the HTML element.  The innerHTML property defines the HTML content.
+</p>
+<h3>Example:</h3>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &ltbody&gt
+  
+  &lth2&gtMy Fist Web Page&lt/h2&gt
+  &ltp&gtMy First Paragraph.&lt/p&gt 
+
+  &ltp id="demo"&gt&lt/p&gt
+  &ltscript&gt
+  document.getElementById("demo").innerHTML = 5 + 6;
+  &ltscript&gt
+
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+This will appear as:
+<div class="js_example">
+  <h2>My First Web Page</h2>
+  <p>My First Paragraph</p>
+
+  <p id="inner_demo"></p>
+
+  <script>
+    document.getElementById("inner_demo").innerHTML = 5 + 6;
+  </script>
+</div>
+<!--End of section-->
 <a href="#top" class="js">Back to top</a> |
 <a href="#top_ch04" class="js">Back to Index </a>
   </main>
