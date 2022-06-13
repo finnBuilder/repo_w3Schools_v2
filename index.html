@@ -6,336 +6,212 @@
   <meta  charset="UTF-8">
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  
 <link rel="stylesheet" href="./css/normalize.css">
+-->
 <link rel="stylesheet" href="./css/css.css">
   <title>w3schools_v2</title>
 
 <link rel="icon" href="./img/favicon.png"
   
 </head>
-<body>
-<header>
-<!--INDEX 🚩🚩-->
-<button onclick="document.getElementById('index').style.display='none'">Hide Index</button>
-<a href="#bottom">Go to bottom</a>
+<body class="cl_white_f1">
+<!--INDEX 🚩🚩🚩🚩-->
 
-  <p id="top">TOP</p>
-  <button onclick="document.getElementById('index').style.display='none'">Hide Index</button> | 
-  <button onclick="document.getElementById('index').style.display='block'">Display Index</button>
+<h1 class="ta_center">Index</h1>
 
-  <ul class="bkg_b" id="index">
-    
-  <li><a href="#ch01_button" class="html bold" id="top_ch01"><b>Ch. 1 HTML Introduction</b></a></li>
-    <ul class="html">
-    <li>What is HTML?</li>
-    <li>What is an HTML Element?</li>
-    <li>Web Browsers</li>
-    <li>HTML Page Structure</li>
-    <li>HTML History</li>
-    </ul>
-  <br>
-  <li><a href="#ch02_button" class="css bold" id="top_ch02">Ch. 2 CSS Introduction</a></li>
-  <ul class="css">
-    <li>What is CSS?</li>
-    <li>CSS Solved a Big Problem</li>
-    <li>CSS Saves a Lot of Work</li>
-  </ul>
-  <br>
-  <li><a href="#ch03_button" class="js bold" id="top_ch03">Ch. 3 JavaScript Introduction</a></li>
-    <ul class="js">
-    <li>JavaScript Can Change HTML Content</li>
-    <li>JavaScript Can Change HTML Attribute Values</li>
-    <li>JavaScript Can Change HTML Styles (CSS)</li>
-    <li>JavaScript Can Hide HTML Elements</li>
-    <li>JavaScript Can Show HTML Elements</li>
-  </ul>
-  <br>
-  <li><a href="#ch04_button" class="js bold"
-    id="top_ch04">Ch. 4 JavaScript Where To</a></li>
-    <ul class="js">
-      <li>The &ltscript&gt</li>
-      <li>JavaScript Functions and Events</li>
-      <li>JavaScript in &lthead&gt or &ltbody&gt</li>
-      <li>JavaScript in &ltbody&gt</li>
-      <li>External JavaScript</li>
-      <li>External JavaScript Advantages</li>
-      <li>External References</li>
-</ul>
+<button class=" ta_center cl_red bold wd_100" onclick="document.getElementById('index_1').style.display='block'">Show Index-1
+</button>
 <br>
-<li><a href="#ch05_button" class="js bold" id=top_ch05</a>Ch. 5 JavaScript Output</a></li>  
-<ul class="js">
-  <li>JavaScript Display Possibilities</li>
-  <li>Using innerHTML</li>
-  <li>Using document.write()</li>
-  <li>Using window.alert</li>
-  <li>Using console.log()</li>
-  <li>JavaScript Print()</li>
+<button class="wd_100 cl_red ta_center" onclick="document.getElementById('index_1').style.display='none'">Hide Index-1</button>
+
+<!--Index-1 🚩🚩-->
+<section id="index_1">
+
+<h2>Index-1</h2>
+
+
+<!--Chapter 3-Index 🚩🚩-->
+<button class="js wd_100" onclick="document.getElementById('view_ch03').style.display='block'"><h3>Ch. 3 JavaScript Introduction</h3>
+<ul>
+<li>JavaScript Can Change HTML Content</li>
+<li>JavaScript Can Change HTML Attribute Values</li>
+<li>JavaScript Can Change HTML Styles (CSS)</li>
+<li>JavaScript Can Hide HTML Elements</li>
+<li>JavaScript Can Show HTML Elements</li>
 </ul>
+</button>
 
-</ul>
-
-</header>
-<hr>
-<main>
-<!--CHAPTER 1 🚩-->
-    <button id="ch01_button" onclick="document.getElementById('view_ch01').style.display='block'">Ch.01</button>
-  <div class="html" id="view_ch01">
-  <h2 id="ch01">Ch. 1 HTML Introduction</h2>
-  <h3>What is HTML?</h3>
-  <ol>
-  <li>HTML stands for Hyper Text Markup Language</li>
-  <li>HTML is the standard markup language for creating Web pages</li>
-  <li>HTML describes the structure of a Web page</li>
-  <li>HTML consists of a series of elements</li>
-  <li>HTML elements tell the browser how to display the content</li>
-  <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
-  </ol>
-  <h4>Example of a Simple HTML Document</h4>
-  <pre>
-    &lt!DOCTYPE html&gt
-    &lthtml&gt
-    &lthead&gt
-    &lttitle&gtPage Title&lttitle&gt
-    &lt/head>
-    &ltbody&gt
-
-    &lth1&gtMy First Heading&lt/h1&gt
-    &ltp&gtMy first paragraph&lt/p&gt
-
-    &lt/body&gt
-    &lt/html&gt
-    </pre>
-  <h4>Will appear as:</h4>
-  <div class="html_example">
-  <h1>My First Heading</h1>
-  <p>My first paragraph</p>
- 
-  </div>
-  <h4>Example Explained</h4>
-  <ul>
-  <li>&lt!DOCTYPE thml&gt = Is the declaration that defines that this document is an HTML5 document</li>
-  <li>&lthtml&gt = Is the root element of an HTML page</li>
-  <li>&lthead&gt = Is the element containg meta information about the HTML page</li>
-  <li>
-  &lttitle&gt = Is the element that specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
-  </li>
-  <li>&ltbody&gt = Is the element that defines the document's body, and the container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
-  <li>&lth1&gt = Is the element that defines a large heading</li>
-  <li>
-  &ltp&gt = Is the element that defines a paragraph
-  </li>
-  </ul>
-  <h3>What is an hTML Element?</h3>
-  <p>An HTML element is defined by a start tag, some content, and an end tag.  Some HTML elements have no content (e.g. &ltbr&gt).  These elements are called empty elements.  Empty elements do not have an end tag.</p>
-  <h3>Web Browsers</h3>
-  <p>The purpose of a web browser (e.g. Chrome) is to read HTML documnts and display them correctly.</p>
-  <h3>HTML History</h3>
-  <ul>
-    <li>In 1989 Tim Berners-Lee invented www</li>
-    <li>1991 Tim Berners-Lee invented HTML</li>
-    <li>2008 WHATWG HTML5 First Public Draft</li>
-    <li>2014 W3c Recommendation: HTML5</li>
-    <li>2017 W3C Recommendation: HTML5.2</li>
-  </ul>
- 
-<!--Footer 🚩-->
-<button onclick="document.getElementById('view_ch01').style.display='none'">Hide Ch. 01</button> |
-<a href="#top" class="html">Back to top</a> |
-<a href="#top_ch01" class="html">Back to Index</a>
-</div>
-<br>
-
- <hr>
- <!--CHAPTER 2 🚩-->
-  <button id="ch02_button" onclick="document.getElementById('view_ch02').style.display='block'">Ch.02</button>
-
-  <div class="css" id="view_ch02">
-    <h2 id="ch02">Ch. 2  CSS Introduction</h2>
-    <h3>What is CSS?</h3>
-    <ul>
-      <li>CSS stands for Cascading Style Sheets</li>
-      <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-      <li>CSS saves a lot of work.  It cn control the layout of multiple web pages all at once</li>
-      <li>External stylesheets are stored in CSS files</li>
-    </ul>
-    <h3>Why Use CSS?</h3>
-    <p>CSS is used to define styles for your web pages, including the design, and layout and variations in display for different devices and screen sizes.</p>
-    <h3>CSS Solved a Big Problem</h3>
-    <p>HTML was never intended to contain tags for formatting a web page!  HTML was created to describe teh content of a web page, like: &lth1&gtThis is a heading&lt/h1&gt and &ltp&gtThis is a paragraph.&lt/p&gt.</p>
-    <p>
-      When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers.  Development of large websites, where fonts and color information were added to every single page, became a long a nd expensive process.
-    </p>
-    <p>
-      To solve this problem, the World Wide Web Consortium (W3C) created CSS.  CSS removed the style formatting from the HTML page!
-    </p>
-<h3>CSS Saves a Lot of Work</h3>
-<p>
-  The style definitions are normally saved in external .css files.  With an external stylesheet file, you can change the look of an entire website by changing just one file!
-</p>
-<!--Footer 🚩-->
-<button onclick="document.getElementById('view_ch02').style.display='none'">Hide Ch.02</button> |
-<a href="#top" class="css">Back to top</a> |
-<a href="#top_ch02" class="css">Back to Index</a>
-  </div> 
-
-  <hr>
- 
-  <!--CHAPTER 3 🚩-->
-  <button id="ch03_button" onclick="document.getElementById('view_ch03').style.display='block'">Ch.03</button>
-  <div class="js" id="view_ch03" >
+<button class="js wd_100 ta_center" onclick="document.getElementById('view_ch03').style.display='none'">
+  Hide ch.3
+</button>
+  <!--CHAPTER 3 🚩🚩-->
+  <div class="js fl_l wd_100" id="view_ch03">
     <h2 id="ch03">Ch. 3 JavaScript Introduction</h2>
     <h3>JavaScript Can Change HTML Content</h3>
-      <p>
-        One of many JavaScript HTML methods is getElementByID().
-      </p>
-      <h3>Example:</h3>
-      <p>
-        document.getElementByID("")
-      </p>
+    <p>
+      One of many JavaScript HTML methods is getElementByID().
+    </p>
+    <h3>Example:</h3>
+    <p>
+      document.getElementByID("")
+    </p>
+  
+    <pre>
+      &lt!DOCTYPE html&gt
+      &lthtml&gt
+      &ltbody&gt
+      &lth2&gtWhat Can JavaScript Do?&lt/h2&gt
       
-<pre>
-  &lt!DOCTYPE html&gt
-  &lthtml&gt
-  &ltbody&gt
-  &lth2&gtWhat Can JavaScript Do?&lt/h2&gt
+      &ltp id="demo"&gtJavaScript can change HTML content.&lt/p&gt
+    
+      &ltbutton type="button"
+      onclick='document.getElementById("demo").inerHTML = "Hello
+      JavaScript"'&gtClick Me!&lt/button&gt
+      
+      &lt/body&gt
+      &lt/html&gt
+    </pre>
+    <h4>Will Appear As:</h4>
+    <div class="js_example">
   
-  &ltp id="demo"&gtJavaScript can change HTML content.&lt/p&gt
-
-  &ltbutton type="button"
-  onclick='document.getElementById("demo").inerHTML = "Hello
-  JavaScript"'&gtClick Me!&lt/button&gt
+      <h2>What Can JavaScript Do?</h2>
+      <p id="demo">JavaScript can change HTML content.</p>
   
-  &lt/body&gt
-  &lt/html&gt
-</pre>
-<h4> Will Appear As:</h4>
-<div class="js_example">
+      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+      <!--❓❓How would you get the button to change it back?-->
+      &nbsp
+      <button type="button"
+        onclick="document.getElementById('demo').innerHTML='JavaScript can change HTML content.'">Reset!</button>
+    </div>
+    <p>
+      JavScript accepts both double and single quotes. Both
+    </p>
+    <ul>
+      <li>document.getElementById("demo").innerHTML = "Hello JavaScript";</li>
+      <li>document.getElementById('demo').innerHTML = 'Hello JavaScript';</li>
+    </ul>
+    <p>are acceptable</p>
+    <h3>JavaScript Can Change HTML Attribute Values</h3>
+    <p>In this example JavaScript changes teh value of the src (source) attribute of an &ltimg&gt tag:</p>
+    <pre>
+      &lt!DOCTYPE html&gt
+      &lthtml&gt
+      &ltbody&gt
+    
+      &lth2&gtWhat Can JavaScript Do?&lt/h2&gt
+    
+      &ltp&gtJavaScript can change HTML attribute values.&lt/p&gt
+    
+      &ltp&gtIn this case JavaScript changes the value of the src (source) attribute of an image.&lt/p&gt
+    
+      &ltbutton onclick="document.getElementById('myImage').src='./img/pic_bulbon.gif'"&gt
+      &lt/button&gt
+    
+      &ltimg id="myImage" src="./img/bulboff.git" style="width:100px"&gt
+    
+      &ltbutton onclick="document.getElementById(myImage').src='./img/pic_bulboff.gif'"&gtTurn off the light 
+      &lt/button&gt
+      &lt/body&gt
+      &lt/html&gt
+    </pre>
+    <h3>It will appear as:</h3>
+    <div class="bkg_w f_b">
+      <h2>What Can JavaScript Do?</h2>
+      <p>JavaScript can change HTML attribute values.</p>
+      <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+      <button onclick="document.getElementById('myImage').src='./img/pic_bulbon.gif'">Turn on the light</button>
+      <img id="myImage" src="./img/pic_bulboff.gif" style="width:100px">
+      <button onclick="document.getElementById('myImage').src='./img/pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    <div class="js">
+      <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+      <h3>Example:</h3>
+      <pre>
+    &lt!DOCTYPE html&gt
+    &lthtml&gt
+    &ltbody&gt
+    
+    &lth2&gtWhat can JavaScript Do?&lt/h2&gt
+    
+    &ltp id="demo"&gtJavaScript can change teh style of an HTML element.&ltp&gt
+    
+    &ltbutton type="button"
+    onclick="document.getElementById('demo').style.fontSize='35px'"&gt
+    Click Me!&lt/button&gt
+      </pre>
+  
+      <h3>This Will Appear As:</h3>
+    </div>
+  
+    <div class="js_example">
+      <h2>What Can JavaScript Do?</h2>
+  
+      <p id="bigger">JavaScript can change the style of an HTML element.</p>
+  
+      <button type="button" onclick="document.getElementById('bigger').style.fontSize='35px'">Click Me!</button>
+      &nbsp &nbsp
+      <button type="button" onclick="document.getElementById('bigger').style.fontSize='12px'">Rest</button>
+    </div>
+    <h2>JavaScript Can Hide HTML Elements</h2>
+    <pre>
+    &lt!DOCTYPE html&gt
+    &lthtml&gt
+    &ltbody&gt
+    
+    &lth2&gtWhat Can JavaScript Do?&lt/h2&gt
+    
+    &ltp id="demo"&gtJavaScript can hide HTML elements.&lt/p&gt
+    
+    &ltbutton type="button"
+    onclick="document.getElementById('demo').style.display='none'"&gtClick Me!&lt/button&gt
+    </pre>
+    <h3>This will Apprear as:</h3>
+    <div class="js_example">
+      <h2>What Can JavaScript Do?</h2>
+  
+      <p id="hidex">JavaScript Do?</p>
+  
+      <button type="button" onclick="document.getElementById('hidex').style.display='none'">Click Me!</button>
+      &nbsp
+      <button type="button" onclick="document.getElementById('hidex').style.display='block'">Reset!</button>
+    </div>
+    <h4>FYI</h4>
+    <p>JavaScript and Java are completely different languages, both in concept and design. JavaScript was invented by
+      Brendan Eich in 1995, and became an ECMA standard in 1997. ECMA-262 is the official name of the standard. ECMAScript
+      is the official name of the language. </p>
+    <!--Footer 🚩-->
+    <button class="js" onclick="document.getElementById('view_ch03').style.display='none'">Hide Ch.03</button>
+  </div>
+  </ul>
 
-<h2>What Can JavaScript Do?</h2>
-<p id="demo">JavaScript can change HTML content.</p>
+<!--Chapter 4-Index 🚩🚩-->
+<button class="js wd_100" onclick="document.getElementById('view_ch04').style.display='block'"><h3>Ch. 4 JavaScript Where To</h3>
+  <ul>
+        <li>The &ltscript&gt</li>
+        <li>JavaScript Functions and Events</li>
+        <li>JavaScript in &lthead&gt or &ltbody&gt</li>
+        <li>JavaScript in &ltbody&gt</li>
+        <li>External JavaScript</li>
+        <li>External JavaScript Advantages</li>
+        <li>External References</li>
+  </ul>
+</button>
+<br>
+<button class="js wd_100 ta_center" onclick="document.getElementById('view_ch04').style.display='none'">Hide Ch.4</button>
 
-<button type="button"
-onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-<!--❓❓How would you get the button to change it back?-->
-&nbsp
-<button type="button"
-onclick="document.getElementById('demo').innerHTML='JavaScript can change HTML content.'">Reset!</button> 
-</div>
-<p>
-  JavScript accepts both double and single quotes. Both
-</p>
-<ul>
-  <li>document.getElementById("demo").innerHTML = "Hello JavaScript";</li>
-  <li>document.getElementById('demo').innerHTML = 'Hello JavaScript';</li>
-</ul>
-<p>are acceptable</p>
-<h3>JavaScript Can Change HTML Attribute Values</h3>
-<p>In this example JavaScript changes teh value of the src (source) attribute of an &ltimg&gt tag:</p>
-<pre>
-  &lt!DOCTYPE html&gt
-  &lthtml&gt
-  &ltbody&gt
 
-  &lth2&gtWhat Can JavaScript Do?&lt/h2&gt
 
-  &ltp&gtJavaScript can change HTML attribute values.&lt/p&gt
 
-  &ltp&gtIn this case JavaScript changes the value of the src (source) attribute of an image.&lt/p&gt
 
-  &ltbutton onclick="document.getElementById('myImage').src='./img/pic_bulbon.gif'"&gt
-  &lt/button&gt
-
-  &ltimg id="myImage" src="./img/bulboff.git" style="width:100px"&gt
-
-  &ltbutton onclick="document.getElementById(myImage').src='./img/pic_bulboff.gif'"&gtTurn off the light 
-  &lt/button&gt
-  &lt/body&gt
-  &lt/html&gt
-</pre>
-<h3>It will appear as:</h3>
-<div class="bkg_w f_b">
-<h2>What Can JavaScript Do?</h2>
-<p>JavaScript can change HTML attribute values.</p>
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-<button onclick="document.getElementById('myImage').src='./img/pic_bulbon.gif'">Turn on the light</button>
-<img id="myImage" src="./img/pic_bulboff.gif" style="width:100px">
-<button onclick="document.getElementById('myImage').src='./img/pic_bulboff.gif'">Turn off the light</button>
-</div>
-<div class="js">
-  <h2>JavaScript Can Change HTML Styles (CSS)</h2>
-  <h3>Example:</h3>
-  <pre>
-&lt!DOCTYPE html&gt
-&lthtml&gt
-&ltbody&gt
-
-&lth2&gtWhat can JavaScript Do?&lt/h2&gt
-
-&ltp id="demo"&gtJavaScript can change teh style of an HTML element.&ltp&gt
-
-&ltbutton type="button"
-onclick="document.getElementById('demo').style.fontSize='35px'"&gt
-Click Me!&lt/button&gt
-  </pre>
-
-<h3>This Will Appear As:</h3>
-</div>
-
-<div class="js_example">
-<h2>What Can JavaScript Do?</h2>
-
-<p id="bigger">JavaScript can change the style of an HTML element.</p>
-
-<button type="button"
-onclick="document.getElementById('bigger').style.fontSize='35px'">Click Me!</button>
-&nbsp &nbsp
-<button type="button"
-onclick="document.getElementById('bigger').style.fontSize='12px'">Rest</button>
-</div>
-<h2>JavaScript Can Hide HTML Elements</h2>
-<pre>
-&lt!DOCTYPE html&gt
-&lthtml&gt
-&ltbody&gt
-
-&lth2&gtWhat Can JavaScript Do?&lt/h2&gt
-
-&ltp id="demo"&gtJavaScript can hide HTML elements.&lt/p&gt
-
-&ltbutton type="button"
-onclick="document.getElementById('demo').style.display='none'"&gtClick Me!&lt/button&gt
-</pre>
-<h3>This will Apprear as:</h3>
-<div class="js_example">
-  <h2>What Can JavaScript Do?</h2>
-
-  <p id="hidex">JavaScript Do?</p>
-
-  <button type="button"
-  onclick="document.getElementById('hidex').style.display='none'">Click Me!</button>
-  &nbsp
-  <button type="button"
-  onclick="document.getElementById('hidex').style.display='block'">Reset!</button>
-</div>
-<h4>FYI</h4>
-<p>JavaScript and Java are completely different languages, both in concept and design.  JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.  ECMA-262 is the official name of the standard.  ECMAScript is the official name of the language. </p>
-<!--Footer 🚩-->
-<button onclick="document.getElementById('view_ch03').style.display='none'">Hide Ch.03</button> |
-
-<a href="#top" class="js">Back to top</a> |
-    <a href="#top_ch03" class="js">Back to Index</a>
-</div>
-<hr>
-
-<!--CHAPTER 4 🚩-->
-<button id="ch04_button" onclick="document.getElementById('view_ch04').style.display='block'">Ch.04</button>
-<div class="js" id="view_ch04">
+<!--CHAPTER 4 🚩🚩-->
+<div class="js fl_l" id="view_ch04">
   <h2 id="ch04">Ch. 4 JavaScript Where To</h2>
- 
-<h2>The &ltscript&gt</h2>
 
-<p>In HTML, JavaScript code is inserted between &ltscript&gt and &lt/script&gt:</p>
-<pre>
+  <h2>The &ltscript&gt</h2>
+
+  <p>In HTML, JavaScript code is inserted between &ltscript&gt and &lt/script&gt:</p>
+  <pre>
 &lt!DOCTYPE html&gt
 &lthtml&gt
 &ltbody&gt;
@@ -351,32 +227,35 @@ document.getElementById("demo").innerHTML = "MyFirst JavaScript";
 &lt/body&gt
 &lt/html&gt
 </pre>
-<h3>This will appears as:</h3>
-<div class="js_example">
-  <h2>JavaScript in Body</h2>
+  <h3>This will appears as:</h3>
+  <div class="js_example">
+    <h2>JavaScript in Body</h2>
 
-  <p id="bodyx"></p>
+    <p id="bodyx"></p>
 
-  <script>
-    document.getElementById('bodyx').innerHTML = "My First JavaScript";
-  </script>
-</div>
-<h3>FYI</h3>
-<p>Old JavaScript examples may use a type attribute:  &ltscript type="text/javascrit"&gt.<br>
-Thetype attribute is not required.  JavaScript is the default scripting language in HTML5.</p>
+    <script>
+      document.getElementById('bodyx').innerHTML = "My First JavaScript";
+    </script>
+  </div>
+  <h3>FYI</h3>
+  <p>Old JavaScript examples may use a type attribute: &ltscript type="text/javascrit"&gt.<br>
+    Thetype attribute is not required. JavaScript is the default scripting language in HTML5.</p>
 
-<h2>JavaScript Functions and Events</h2>
-<p>A JavaScript function is a block of JavaScript code, that can be executed when called for, like when a user clicks a button.</p>
+  <h2>JavaScript Functions and Events</h2>
+  <p>A JavaScript function is a block of JavaScript code, that can be executed when called for, like when a user clicks
+    a button.</p>
 
-<h2>JavaScript in &lthead&gt or &ltbody&gt</h2>
-<p>You can place any number of scripts in an HTML document.  Scripts can be placed in the &ltbody&gt or in the &lthead&gt section of an HTML page, or in both.</p>
+  <h2>JavaScript in &lthead&gt or &ltbody&gt</h2>
+  <p>You can place any number of scripts in an HTML document. Scripts can be placed in the &ltbody&gt or in the
+    &lthead&gt section of an HTML page, or in both.</p>
 
-<h2>JvaScript in &lthead or body&gt </h2>
-<p>
-  In this example, a JavaScript function is placed in the &lthead&gt section of an HTML page.  The function is invoked (called) when a button is clicked:
-</p>
+  <h2>JvaScript in &lthead or body&gt </h2>
+  <p>
+    In this example, a JavaScript function is placed in the &lthead&gt section of an HTML page. The function is invoked
+    (called) when a button is clicked:
+  </p>
 
-<pre>
+  <pre>
   &lt!DOCTYPE html&gt
   &lthtml&gt
   &lthead&gt
@@ -397,88 +276,101 @@ Thetype attribute is not required.  JavaScript is the default scripting language
   &lt/html&gt 
 </pre>
 
-<p>This would appear as:</p>
-<div class="js_example">
-  
-  <h2>Demo JavaScript in Head</h2>
+  <p>This would appear as:</p>
+  <div class="js_example">
 
-  <p id="head2">A Paragraph.</p>
+    <h2>Demo JavaScript in Head</h2>
 
-  <button type="button" onclick="function2()">Try it</button>
-  <script>
-    function function2() {
+    <p id="head2">A Paragraph.</p>
+
+    <button type="button" onclick="function2()">Try it</button>
+    <script>
+      function function2() {
         document.getElementById("head2").innerHTML = "Paragraph changed.";
-    }
-  </script>
-</div>
-<br>
-<h2>FYI</h2>
-<p>Placing scripts at the bottom of the &ltbody&gt element improves the display speed, because script interpretation slows down the display.</p>
-
-<h2>External JavaScript</h2>
-<p>
-  Scripts can also be placed in external files:
-</p>
-<p>
-  External scripts are practical when the same code is used in many different web pages.
+      }
+    </script>
+  </div>
   <br>
-  JavaScript files have the file extension .js
-</p>
-<p>
-  To use an external script, put the name of the script file in the src (source) attribute of a &ltscript&gt tag:
-  <br>
-  &ltscript src="myScript.js"&gt&lt/script&gt 
-</p>
-<h3>Example:</h3>
-<div class="js_example">
-  <h2>Demo External JavaScript</h2>
+  <h2>FYI</h2>
+  <p>Placing scripts at the bottom of the &ltbody&gt element improves the display speed, because script interpretation
+    slows down the display.</p>
 
-  <p id="demo_js">
-    A Paragraph.
-  </p>
-  <button type="button" onclick="functionX()">Try it</button>
-
+  <h2>External JavaScript</h2>
   <p>
-    This example links to "js.js". 
+    Scripts can also be placed in external files:
   </p>
   <p>
-    (functionX is stored in "js.js")
+    External scripts are practical when the same code is used in many different web pages.
+    <br>
+    JavaScript files have the file extension .js
   </p>
-<script src="js/js.js"></script>
-</script>
+  <p>
+    To use an external script, put the name of the script file in the src (source) attribute of a &ltscript&gt tag:
+    <br>
+    &ltscript src="myScript.js"&gt&lt/script&gt
+  </p>
+  <h3>Example:</h3>
+  <div class="js_example">
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo_js">
+      A Paragraph.
+    </p>
+    <button type="button" onclick="functionX()">Try it</button>
+
+    <p>
+      This example links to "js.js".
+    </p>
+    <p>
+      (functionX is stored in "js.js")
+    </p>
+    <script src="js/js.js"></script>
+    </script>
+  </div>
+
+  <h2>FYI</h2>
+  <p>⚠External scripts cannot contain &ltscript&gt tags</p>
+
+  <!--Footer 🚩-->
+  <button <button onclick="document.getElementById('view_ch04').style.display='none'">Hide Ch.4</button> |
 </div>
 
-<h2>FYI</h2>
-<p>⚠External scripts cannot contain &ltscript&gt tags</p>
+<!--Chapter 5-Index 🚩🚩-->
+<div class="js">
+  <button class="js fl_l wd_100" onclick="document.getElementById('view_ch05').style.display='block'">
+    <h2>Ch. 5 JavaScript Output</h2>
+    <ul class="js">
+      <li>JavaScript Display Possibilities</li>
+      <li>Using innerHTML</li>
+      <li>Using document.write()</li>
+      <li>Using window.alert</li>
+      <li>Using console.log()</li>
+      <li>JavaScript Print()</li>
+    </ul>
+  </button>
+  <button class="js wd_100 ta_center" onclick="document.getElementById('view_ch05').style.display='none'">Hide Ch.5</button>
 
-<!--Footer 🚩-->
-<button
-<!--
-<button onclick="document.getElementById('view_ch03').style.display='none'">Hide Ch.03</button> |
-<--
-<a href="#top" class="js">Back to top</a> |
-<a href="#top_ch04" class="js">Back to Index </a>
 </div>
-<hr>
-<!--CHAPTER 5 🚩-->
-<button id="ch05_button" onclick="document.getElementById('view_ch05').style.display='block'">Ch.05</button>
-<div class="js" id="view_ch05">
+
+<!--CHAPTER 5 🚩🚩-->
+  <div class="js fl_l" id="view_ch05">
   <h2 id="ch05">Ch. 5 JavaScript Output</h2>
- 
-<h2>JavaScript Display Possibilities</h2>
-<p>JavaScript can "display" data in different ways:</p>
-<ul>
-  <li>Writing into an HTML element, using innerHTML.</li>
-  <li>Writing into the HTML output using document.write().</li>
-  <li>Writing into an alert box, using window.alert().</li>
-  <li>Writing into the browser console, using console.lof().</li>
-</ul>
-<h3>Using innerHTML</h3>
-<p>
-  To access an HTML element, JavaScript can use the document.getElementById(id) method.  The id attribute defines the HTML element.  The innerHTML property defines the HTML content.
-</p>
-<h3>Example:</h3>
-<pre>
+
+  <h2>JavaScript Display Possibilities</h2>
+  <p>JavaScript can "display" data in different ways:</p>
+  <ul>
+    <li>Writing into an HTML element, using innerHTML.</li>
+    <li>Writing into the HTML output using document.write().</li>
+    <li>Writing into an alert box, using window.alert().</li>
+    <li>Writing into the browser console, using console.lof().</li>
+  </ul>
+  <h3>Using innerHTML</h3>
+  <p>
+    To access an HTML element, JavaScript can use the document.getElementById(id) method. The id attribute defines the
+    HTML element. The innerHTML property defines the HTML content.
+  </p>
+  <h3>Example:</h3>
+  <pre>
   &lt!DOCTYPE html&gt
   &lthtml&gt
   &ltbody&gt
@@ -494,25 +386,25 @@ Thetype attribute is not required.  JavaScript is the default scripting language
   &lt/body&gt
   &lt/html&gt
 </pre>
-This will appear as:
-<div class="js_example">
-  <h2>My First Web Page</h2>
-  <p>My First Paragraph</p>
+  This will appear as:
+  <div class="js_example">
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph</p>
 
-  <p id="inner_demo"></p>
+    <p id="inner_demo"></p>
 
-  <script>
-    document.getElementById("inner_demo").innerHTML = 5 + 6;
-  </script>
-</div>
-<h3>FYI</h3>
-<p>Changing the innerHTML property of an HTML element is a common way to display data in HTML.</p>
+    <script>
+      document.getElementById("inner_demo").innerHTML = 5 + 6;
+    </script>
+  </div>
+  <h3>FYI</h3>
+  <p>Changing the innerHTML property of an HTML element is a common way to display data in HTML.</p>
 
-<h2>Using document.write()</h2>
-<p>
-  For testing purposes, it is convenient to use document.write():
-</p>
-<h3>Example:</h3>
+  <h2>Using document.write()</h2>
+  <p>
+    For testing purposes, it is convenient to use document.write():
+  </p>
+  <h3>Example:</h3>
   <pre>
     &lt!DOCTYPE html&gt
     &lthtml&gt
@@ -531,78 +423,233 @@ This will appear as:
     &lt/body&gt
     &lt/html&gt 
   </pre>
-<h3>It Will Appear:</h3>
-<div class="js_example">
-  <h2>My First Web Page</h2>
-  <p>My first paragraph.</p>
+  <h3>It Will Appear:</h3>
+  <div class="js_example">
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
 
+    <p>
+      Never call document.write after the document has finished loading. It will overwrite the whole document.</p>
+
+    <script>
+      document.write(5 + 6);
+    </script>
+    </p>
+  </div>
+  <h2 class="war">FYI</h2>
+  <p class="war">Using document.write() after an HTML document is loaded, will delete all existing HTML</p>
+  <h3>This example will show why document.write() method should only be used for testing:</h3>
+  <div class="js_example">
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+
+    <button type="button" onclick="write(5 + 6)">Click to erase all HTML</button>
+  </div>
+  <h2>Using window.alert()</h2>
+  <p>You can use an alert box to display data:</p>
+
+  <h3>Will Appear as:</h3>
+  <div class="js_example">
+    <h2>Web Page Title</h2>
+    <p>First paragraph.</p>
+    <p>The alert when you load the page.</p>
+
+    <script>
+      window.alert(6 + 6);
+    </script>
+  </div>
+  <h3>FYI</h3>
   <p>
-    Never call document.write after the document has finished loading.  It will overwrite the whole document.</p>
-
-  <script>
-    document.write(5 + 6);
-  </script>
+    You can skip the window keyword.
+    <br>
+    In Javascript, the window object is the global scope object, that means that variables, properties, and methods by
+    default belong to the window object. This also means that specifying the window keyword is optional.
+    <br>
+    alert()
+    <br>
+    works as well.
   </p>
-</div>
-<h2 class="war">FYI</h2>
-<p class="war">Using document.write() after an HTML document is loaded, will delete all existing HTML</p>
-<h3>This example will show why document.write() method should only be used for testing:</h3>
-<div class="js_example">
-  <h2>My First Web Page</h2>
-  <p>My first paragraph.</p>
-
-  <button type="button" onclick="write(5 + 6)">Click to erase all HTML</button>
-</div>
-<h2>Using window.alert()</h2>
-<p>You can use an alert box to display data:</p>
-
-<h3>Will Appear as:</h3>
-<div class="js_example">
-  <h2>Web Page Title</h2>
-  <p>First paragraph.</p>
-  <p>The alert when you load the page.</p>
-
-<script>
-  window.alert(6 + 6);
-</script>
-</div>
-<h3>FYI</h3>
-<p>
-  You can skip the window keyword.
-  <br>
-  In Javascript, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object.  This also means that specifying the window keyword is optional.
-  <br>
-  alert()
-  <br>
-  works as well.
-</p>
-<h2>Using console.log()</h2>
-<p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
-<h4>Example:
-  <pre>
+  <h2>Using console.log()</h2>
+  <p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
+  <h4>Example:
+    <pre>
    &ltscript&gt
    console.log(6 + 6);
    &lt/script&gt 
   </pre>
-</h4>
-<h2>JavaScript Print</h2>
-<p>JavaScript does not have any print object or print methods.  You cannot access output devices from JavaScript.
+  </h4>
+  <h2>JavaScript Print</h2>
+  <p>JavaScript does not have any print object or print methods. You cannot access output devices from JavaScript.
+    <br>
+    The only exception is that you can call the window.print() method in the browser to print the content of the current
+    window.
+    <br><br>
+    <button onclick="window.print()">Print this page</button>
+  </p>
+
+  <!--Footer 🚩-->
+  <button onclick="document.getElementById('view_ch05').style.display='none'">Hide Ch.05</button> |
+</div>
+<button onclick="document.getElementById('index_1').style.display='none'">Hide Index-1</button>
+</section>
 <br>
-The only exception is that you can call the window.print() method in the browser to print the content of the current window.
-<br><br>
-<button onclick="window.print()">Print this page</button>
-</p>
+<br>
+
+<!--Index 5 🚩🚩-->
+<button class="ta_center cl_black-w bold wd_100" onclick="document.getElementById('index_5').style.display='block'">Show Index-5</button>
+<br>
+<button class="wd_100 ta_center cl_black-w" onclick="document.getElementById('index_5').style.display='none'">Hide Index-5</button>
+</div>
+
+<!--Index-5 🚩🚩-->
+<div id="index_5">
+<h2>Index-5</h2>
+
+<!--Chapter 1-Index 🚩🚩-->
+<button class="html wd_100" onclick="document.getElementById('view_ch01').style.display='block'"><h3>Ch. 1 HTML Introduction</h3>
+  <ul>
+  <li>What is HTML?</li>
+  <li>What is an HTML
+     Element?</li>
+  <li>Web Browsers</li>
+  <li>HTML Page Structure</li>
+  <li>HTML History</li>
+</ul>
+</button>
+<button class="html wd_100 ta_center" onclick="document.getElementById('view_ch01').style.display='none'">Hide Ch.01</button>
+
+<!--CHAPTER 1 🚩🚩-->
+<div class="html fl_l" id="view_ch01">
+  <h2 id="ch01">Ch. 1 HTML Introduction</h2>
+  <h3>What is HTML?</h3>
+  <ol>
+    <li>HTML stands for Hyper Text Markup Language</li>
+    <li>HTML is the standard markup language for creating Web pages</li>
+    <li>HTML describes the structure of a Web page</li>
+    <li>HTML consists of a series of elements</li>
+    <li>HTML elements tell the browser how to display the content</li>
+    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+    </li>
+  </ol>
+  <h4>Example of a Simple HTML Document</h4>
+  <pre>
+    &lt!DOCTYPE html&gt
+    &lthtml&gt
+    &lthead&gt
+    &lttitle&gtPage Title&lttitle&gt
+    &lt/head>
+    &ltbody&gt
+
+    &lth1&gtMy First Heading&lt/h1&gt
+    &ltp&gtMy first paragraph&lt/p&gt
+
+    &lt/body&gt
+    &lt/html&gt
+    </pre>
+  <h4>Will appear as:</h4>
+  <div class="html_example">
+    <h1>My First Heading</h1>
+    <p>My first paragraph</p>
+
+  </div>
+  <h4>Example Explained</h4>
+  <ul>
+    <li>&lt!DOCTYPE thml&gt = Is the declaration that defines that this document is an HTML5 document</li>
+    <li>&lthtml&gt = Is the root element of an HTML page</li>
+    <li>&lthead&gt = Is the element containg meta information about the HTML page</li>
+    <li>
+      &lttitle&gt = Is the element that specifies a title for the HTML page (which is shown in the browser's title bar
+      or in the page's tab)
+    </li>
+    <li>&ltbody&gt = Is the element that defines the document's body, and the container for all the visible contents,
+      such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+    <li>&lth1&gt = Is the element that defines a large heading</li>
+    <li>
+      &ltp&gt = Is the element that defines a paragraph
+    </li>
+  </ul>
+  <h3>What is an hTML Element?</h3>
+  <p>An HTML element is defined by a start tag, some content, and an end tag. Some HTML elements have no content (e.g.
+    &ltbr&gt). These elements are called empty elements. Empty elements do not have an end tag.</p>
+  <h3>Web Browsers</h3>
+  <p>The purpose of a web browser (e.g. Chrome) is to read HTML documnts and display them correctly.</p>
+  <h3>HTML History</h3>
+  <ul>
+    <li>In 1989 Tim Berners-Lee invented www</li>
+    <li>1991 Tim Berners-Lee invented HTML</li>
+    <li>2008 WHATWG HTML5 First Public Draft</li>
+    <li>2014 W3c Recommendation: HTML5</li>
+    <li>2017 W3C Recommendation: HTML5.2</li>
+  </ul>
+
+  <!--Footer 🚩-->
+  <button class="html" onclick="document.getElementById('view_ch01').style.display='none'">Hide Ch. 01</button> |
+  <a href="#top" class="html">Back to top</a> |
+  <a href="#top_ch01" class="html">Back to Index</a>
+</div>
+<br>
+
+<hr>
+
+<!--Chapter 2-index 🚩🚩-->
+<button class="css wd_100" onclick="document.getElementById('view_ch02').style.display='block'"><h3>Ch. 2 CSS Introduction</h3>
+<ul>
+  <li>What is CSS?</li>
+  <li>CSS Solved a Big Problem</li>
+  <li>CSS Saves a Lot of Work</li>
+</ul>
+</button>
+<button class="css wd_100 ta_center" onclick="document.getElementById('view_ch02').style.display='none'">Hide Ch.02</button>
+
+
+<!--CHAPTER 2 🚩🚩-->
+<div class="css fl_l" id="view_ch02">
+  <h2 id="ch02">Ch. 2 CSS Introduction</h2>
+  <h3>What is CSS?</h3>
+  <ul>
+    <li>CSS stands for Cascading Style Sheets</li>
+    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+    <li>CSS saves a lot of work. It cn control the layout of multiple web pages all at once</li>
+    <li>External stylesheets are stored in CSS files</li>
+  </ul>
+  <h3>Why Use CSS?</h3>
+  <p>CSS is used to define styles for your web pages, including the design, and layout and variations in display for
+    different devices and screen sizes.</p>
+  <h3>CSS Solved a Big Problem</h3>
+  <p>HTML was never intended to contain tags for formatting a web page! HTML was created to describe teh content of a
+    web page, like: &lth1&gtThis is a heading&lt/h1&gt and &ltp&gtThis is a paragraph.&lt/p&gt.</p>
+  <p>
+    When tags like &ltfont&gt, and color attributes were added to the HTML 3.2 specification, it started a nightmare for
+    web developers. Development of large websites, where fonts and color information were added to every single page,
+    became a long a nd expensive process.
+  </p>
+  <p>
+    To solve this problem, the World Wide Web Consortium (W3C) created CSS. CSS removed the style formatting from the
+    HTML page!
+  </p>
+  <h3>CSS Saves a Lot of Work</h3>
+  <p>
+    The style definitions are normally saved in external .css files. With an external stylesheet file, you can change
+    the look of an entire website by changing just one file!
+  </p>
+  <!--Footer 🚩-->
+  <button class="css" onclick="document.getElementById('view_ch02').style.display='none'">Hide Ch.02</button> |
+  <a href="#top" class="css">Back to top</a> |
+  <a href="#top_ch02" class="css">Back to Index</a>
+
+</div>
+
+<button class="wd_100 ta_center cl_black-w" onclick="document.getElementById('index_5').style.display='none'">Hide Index-5</button>
+</section>
+</div>
+
+  
+ 
 
 
 
-
-<!--Footer 🚩-->
-<button onclick="document.getElementById('view_ch05').style.display='none'">Hide Ch.05</button> |
-<a href="#top" class="js">Back to top</a> |
-<a href="#top_ch04" class="js">Back to Index </a>
-  </main>
   <!--Bottom 🛑-->
-  <h3 id="bottom">BOTTOM</h3>
+  <h3 class="ta_center" id="bottom">BOTTOM</h3>
 </div>
   </body>
   </html>
