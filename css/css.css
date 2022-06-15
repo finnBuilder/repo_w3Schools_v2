@@ -1,3 +1,12 @@
+
+.cl_yellow
+{
+  background-color: yellow;
+}
+#index_2
+{
+  display: none;
+}
 header
 {
   background-color: lightgray;
